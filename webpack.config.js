@@ -1,9 +1,9 @@
 const path = require('path');
 const config = {
 	mode: 'development',
-	entry: path.resolve(__dirname, './src/index.jsx'),
+	entry: './src/index.jsx',
 	output: {
-		path: path.resolve(__dirname,'dist'),
+		path: path.resolve(__dirname,'./dist'),
 		filename: 'main.js',	
 	},
 	module: {
@@ -19,7 +19,7 @@ const config = {
 	},
 	devServer: {
 		static: {
-			directory: path.resolve('./dist')
+			directory: './dist'
     }
   }
 };
